@@ -40,13 +40,13 @@ void loop()
   printResult(result, maxValue);
 
   // Allumer la led en fonction du resultat et du seuil
-  led(result, seuil, ledTime);
+  ledOn(result, seuil, ledTime);
 
   delay(refreshDelay);
 }
 
 
-void led (int r, int s, int d) 
+void ledOn (int r, int s, int d) 
 {
   // Allumer la led en fonction du resultat et du seuil
   if (r >= s)
